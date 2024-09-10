@@ -1,0 +1,217 @@
+{
+  // General
+  "files.eol": "\n",
+  "security.workspace.trust.untrustedFiles": "newWindow",
+  "security.promptForLocalFileProtocolHandling": false,
+  // Editor
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.8,
+  "editor.rulers": [120],
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontLigatures": true, 
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+  },
+  // Window/Workspace
+  "window.zoomLevel": 1,
+  "window.commandCenter": false,
+  "workbench.iconTheme": "symbols",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.editor.labelFormat": "short",
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, .npmrc, tsconfig.*, .eslint*, prettier, vite*, nest*",
+    "tailwind.config*": "tailwind.config*, postcss.config*",
+    "next.config*": "next.config*, next-env.d.ts",
+    ".env": ".env*",
+  },
+  // TypeScript / JavaScript
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.preferTypeOnlyAutoImports": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "quickfix.biome": "explicit",
+      "source.organizeImports.biome": "explicit"
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.formatOnSave": true,
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascript]": {
+    "editor.maxTokenizationLineLength": 2500,
+    "editor.formatOnSave": true,
+  },
+  // Prisma
+  "[prisma]": {
+    "editor.formatOnSave": true
+  },
+  // JSON
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  // Python
+  "[python]": {
+    "editor.formatOnType": true,
+    "editor.tabSize": 4
+  },
+  // Terminal
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1",
+    "CW_NEW_SESSION": "1"
+  },
+  // Git
+  "git.openRepositoryInParentFolders": "never",
+  "diffEditor.ignoreTrimWhitespace": false,
+  // Symbols / Icons / Folders
+  "symbols.hidesExplorerArrows": false,
+  "symbols.folders.associations": {
+    "auth": "folder-auth",
+    "adapter": "folder-helpers",
+    "adapters": "folder-helpers",
+    "entities": "folder-layout",
+    "application": "folder-app",
+    "apps": "folder-app",
+    "archive": "folder-gray-outline",
+    "domain": "folder-red-outline",
+    "enterprise": "folder-sky",
+    "src": "folder-red-code",
+    "lib": "folder-sky-code",
+    "test": "folder-orange-code",
+    "tests": "folder-orange-code",
+    "error": "folder-red",
+    "errors": "folder-red",
+    "cache": "folder-red-outline",
+    "_errors": "folder-red",
+    "_components": "folder-green-code",
+    "ui": "folder-yellow-code",
+    "infra": "folder-app",
+    "schemas": "folder-purple",
+    "http": "folder-green-outline",
+    "hooks": "folder-purple",
+    "controllers": "folder-yellow-outline",
+    "controller": "folder-yellow-outline",
+    "controle": "folder-yellow-outline",
+    "modelo": "folder-models",
+    "dao": "folder-database",
+    "view": "folder-layout",
+    "web": "folder-blue-outline",
+    "services": "folder-orange-outline",
+    "use-cases": "folder-blue-outline",
+    "repositories": "folder-database",
+    "routes": "folder-router",
+    "templates": "folder-layout",
+    "transactional": "folder-mail"
+  },
+  // Symbols / Files
+  "symbols.files.associations": {
+    "*.txt": "text",
+    "*.d.ts": "dts",
+    "*.module.ts": "nest",
+    "*.controller.ts": "code-yellow",
+    "vitest.config.e2e.mts": "vite",
+    "*.e2e-spec.ts": "ts-test"
+  },
+  // Color Theme
+  "workbench.colorTheme": "Vesper",
+  // Side Bar Location
+  "workbench.sideBar.location": "right",
+  // Remove left-side icons
+  "workbench.activityBar.location": "hidden",
+  // Remove bottom status bar
+  "workbench.statusBar.visible": false,
+  // Remove position indicator in the editor's scrollbar
+  "editor.hideCursorInOverviewRuler": true,
+  // Remove horizontal scrollbars
+  "editor.scrollbar.horizontal": "hidden",
+  // Remove vertical scrollbars
+  "editor.scrollbar.vertical": "hidden",
+  // Remove minimap
+  "editor.minimap.enabled": false,
+  // Remove the line number gutter
+  "editor.glyphMargin": false,
+  // Remove code-block folding icon
+  // "editor.folding": false,
+  // Move tabs to be in a single line with window controls
+  "window.titleBarStyle": "native",
+  // Activity Bar
+  "apc.electron": {
+    "titleBarStyle": "hiddenInset",
+    "trafficLightPosition": {
+      "x": 11,
+      "y": 10
+    },
+    "frame": false
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  // Remove unnecessary controls from primary bar and tabs list
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none", // Remove primary side bar title
+    ".title-actions": "display: none", // Remove primary side bar action icons
+    ".editor-actions": "display: none", // Remove editor action icons
+    ".nosidebar .inline-tabs-placeholder": "width: 75px", // Align tabs to not overlap window controls when primary bar is hidden
+    ".editor-group-container": "border-radius: 20px",
+    ".pane-header": "padding: 0 8px",
+    ".pane-body": "padding: 8px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 4px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;"
+  },
+  // Activity bar options
+  "apc.activityBar": {
+    "itemMargin": 4,
+    "itemSize": 32,
+    "size": 48,
+    "position": "bottom"
+  },
+  // Spell Checker
+  "cSpell.language": "en,pt-BR,lorem,en-US,en-GB,pt",
+  "cSpell.userWords": ["encrypter", "fastify", "nestjs", "pnpx", "rotrenanoliveira", "saas"],
+   // Java
+   "[java-properties]": {
+    "editor.formatOnSave": true
+  },
+  "[java]": {
+    "editor.formatOnType": true,
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 4,
+  },
+  "javafx.libPath": "/Users/rotrenanoliveira/Desktop/AppGestaoProdutoFinal2/lib",
+  "java.completion.favoriteStaticMembers": [
+    "org.junit.Assert.*",
+    "org.junit.Assume.*",
+    "org.junit.jupiter.api.Assertions.*",
+    "org.junit.jupiter.api.Assumptions.*",
+    "org.junit.jupiter.api.DynamicContainer.*",
+    "org.junit.jupiter.api.DynamicTest.*",
+    "org.mockito.Mockito.*",
+    "org.mockito.ArgumentMatchers.*",
+    "org.mockito.Answers.*"
+  ],
+  // Other
+  "update.mode": "manual",
+  "redhat.telemetry.enabled": false,
+  "editor.tokenColorCustomizations": {
+    "textMateRules": []
+  },
+}
